@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0049)https://bbs.archlinux.org/viewtopic.php?id=225346 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>[SOLVED] HDMI sound card is not detected by pulseaudio? / Newbie Corner / Arch Linux Forums</title>
+<link rel="stylesheet" type="text/css" href="./[SOLVED] HDMI sound card is not detected by pulseaudio_ _ Newbie Corner _ Arch Linux Forums_files/ArchLinux.css">
+<link rel="canonical" href="https://bbs.archlinux.org/viewtopic.php?id=225346" title="Page 1">
+<link rel="alternate" type="application/atom+xml" href="https://bbs.archlinux.org/extern.php?action=feed&amp;tid=225346&amp;type=atom" title="Atom topic feed">
+    <link rel="stylesheet" media="screen" href="./[SOLVED] HDMI sound card is not detected by pulseaudio_ _ Newbie Corner _ Arch Linux Forums_files/arch.css">
+        <link rel="stylesheet" media="screen" href="./[SOLVED] HDMI sound card is not detected by pulseaudio_ _ Newbie Corner _ Arch Linux Forums_files/archnavbar.css">
+    
+<link rel="shortcut icon" href="https://bbs.archlinux.org/style/ArchLinux/favicon.ico">
+<script data-dapp-detection="">(function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){return window.__disableDappDetectionInsertion||n(),t}})}})();</script></head>
+
+<body class="">
+<div id="archnavbar" class="anb-forum">
+	<div id="archnavbarlogo"><h1><a href="http://www.archlinux.org/">Arch Linux</a></h1></div>
+	<div id="archnavbarmenu">
+		<ul id="archnavbarlist">
+			<li id="anb-home"><a href="http://www.archlinux.org/">Home</a></li><li id="anb-packages"><a href="http://www.archlinux.org/packages/">Packages</a></li><li id="anb-forums" class="anb-selected"><a href="https://bbs.archlinux.org/">Forums</a></li><li id="anb-wiki"><a href="https://wiki.archlinux.org/">Wiki</a></li><li id="anb-bugs"><a href="https://bugs.archlinux.org/">Bugs</a></li><li id="anb-security"><a href="https://security.archlinux.org/">Security</a></li><li id="anb-aur"><a href="https://aur.archlinux.org/">AUR</a></li><li id="anb-download"><a href="http://www.archlinux.org/download/">Download</a></li>		</ul>
+	</div>
+</div>
+
+
+<div id="punviewtopic" class="pun">
+<div class="top-box"></div>
+<div class="punwrap">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex" class="isactive"><a href="https://bbs.archlinux.org/index.php">Index</a></li>
+				<li id="navrules"><a href="https://bbs.archlinux.org/misc.php?action=rules">Rules</a></li>
+				<li id="navsearch"><a href="https://bbs.archlinux.org/search.php">Search</a></li>
+				<li id="navregister"><a href="https://bbs.archlinux.org/register.php">Register</a></li>
+				<li id="navlogin"><a href="https://bbs.archlinux.org/login.php">Login</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p class="conl">You are not logged in.</p>
+			<ul class="conr">
+				<li><span>Topics: <a href="https://bbs.archlinux.org/search.php?action=show_recent" title="Find topics with recent posts.">Active</a> | <a href="https://bbs.archlinux.org/search.php?action=show_unanswered" title="Find topics with no replies.">Unanswered</a></span></li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="brdmain">
+<div class="linkst">
+	<div class="inbox crumbsplus">
+		<ul class="crumbs">
+			<li><a href="https://bbs.archlinux.org/index.php">Index</a></li>
+			<li><span>»&nbsp;</span><a href="https://bbs.archlinux.org/viewforum.php?id=23">Newbie Corner</a></li>
+			<li><span>»&nbsp;</span><strong><a href="https://bbs.archlinux.org/viewtopic.php?id=225346">[SOLVED] HDMI sound card is not detected by pulseaudio?</a></strong></li>
+		</ul>
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages: </span><strong class="item1">1</strong></p>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="p1705426" class="blockpost rowodd firstpost blockpost1">
+	<h2><span><span class="conr">#1</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1705426#p1705426">2017-04-20 04:45:50</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>duyinthee</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2015-06-14</span></dd>
+						<dd><span>Posts: 121</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>[SOLVED] HDMI sound card is not detected by pulseaudio?</h3>
+					<div class="postmsg">
+						<p>I installed fresh Arch + KDE (Plasma). I have these audio cards</p><div class="codebox"><pre><code>$ lspci | grep Audio
+00:03.0 Audio device: Intel Corporation Broadwell-U Audio Controller (rev 09)
+00:1b.0 Audio device: Intel Corporation Wildcat Point-LP High Definition Audio Controller (rev 03)</code></pre></div><p>and I have</p><div class="codebox"><pre><code>$ cat /proc/asound/cards
+ 0 [HDMI           ]: HDA-Intel - HDA Intel HDMI
+                      HDA Intel HDMI at 0xf7214000 irq 52
+ 1 [PCH            ]: HDA-Intel - HDA Intel PCH
+                      HDA Intel PCH at 0xf7210000 irq 49</code></pre></div><div class="codebox"><pre><code>$ cat /proc/asound/modules
+ 0 snd_hda_intel
+ 1 snd_hda_intel</code></pre></div><p>but no HDMI soud device in this:</p><div class="codebox"><pre><code>$ pacmd list-sinks | grep -e 'name:' -e 'index'
+  * index: 0
+        name: &lt;alsa_output.pci-0000_00_1b.0.analog-stereo&gt;
+$ </code></pre></div><p>I googled and found this page <a href="https://bugs.freedesktop.org/show_bug.cgi?id=89139" rel="nofollow">https://bugs.freedesktop.org/show_bug.cgi?id=89139</a> and<br>remove files in ~/.config/pulse dir as said in that page.<br>But not work.</p><p>Connecting TV via HDMI port, display is working but no HDMI sound and no entry to choose in KDE's System Setting &gt; Multimedia.</p><p>Please help!</p>
+						<p class="postedit"><em>Last edited by duyinthee (2017-04-20 07:39:25)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1705429" class="blockpost roweven">
+	<h2><span><span class="conr">#2</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1705429#p1705429">2017-04-20 06:16:36</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>tom.ty89</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2012-11-15</span></dd>
+						<dd><span>Posts: 896</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] HDMI sound card is not detected by pulseaudio?</h3>
+					<div class="postmsg">
+						<p>What about pacmd list-cards?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1705431" class="blockpost rowodd">
+	<h2><span><span class="conr">#3</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1705431#p1705431">2017-04-20 06:48:40</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>duyinthee</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2015-06-14</span></dd>
+						<dd><span>Posts: 121</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] HDMI sound card is not detected by pulseaudio?</h3>
+					<div class="postmsg">
+						<p>Yes, it shows 2 cards, here:</p><div class="codebox"><pre class="vscroll"><code>$ pacmd list-cards
+2 card(s) available.
+    index: 0
+        name: &lt;alsa_card.pci-0000_00_03.0&gt;
+        driver: &lt;module-alsa-card.c&gt;
+        owner module: 6
+        properties:
+                alsa.card = "0"
+                alsa.card_name = "HDA Intel HDMI"
+                alsa.long_card_name = "HDA Intel HDMI at 0xf7214000 irq 52"
+                alsa.driver_name = "snd_hda_intel"
+                device.bus_path = "pci-0000:00:03.0"
+                sysfs.path = "/devices/pci0000:00/0000:00:03.0/sound/card0"
+                device.bus = "pci"
+                device.vendor.id = "8086"
+                device.vendor.name = "Intel Corporation"
+                device.product.id = "160c"
+                device.product.name = "Broadwell-U Audio Controller"
+                device.form_factor = "internal"
+                device.string = "0"
+                device.description = "Built-in Audio"
+                module-udev-detect.discovered = "1"
+                device.icon_name = "audio-card-pci"
+        profiles:
+                output:hdmi-stereo: Digital Stereo (HDMI) Output (priority 5400, available: no)
+                output:hdmi-surround: Digital Surround 5.1 (HDMI) Output (priority 300, available: no)                                                 
+                output:hdmi-surround71: Digital Surround 7.1 (HDMI) Output (priority 300, available: no)                                               
+                output:hdmi-stereo-extra1: Digital Stereo (HDMI 2) Output (priority 5200, available: no)                                               
+                output:hdmi-surround-extra1: Digital Surround 5.1 (HDMI 2) Output (priority 100, available: no)                                        
+                output:hdmi-surround71-extra1: Digital Surround 7.1 (HDMI 2) Output (priority 100, available: no)                                      
+                output:hdmi-stereo-extra2: Digital Stereo (HDMI 3) Output (priority 5200, available: no)                                               
+                output:hdmi-surround-extra2: Digital Surround 5.1 (HDMI 3) Output (priority 100, available: no)                                        
+                output:hdmi-surround71-extra2: Digital Surround 7.1 (HDMI 3) Output (priority 100, available: no)                                      
+                off: Off (priority 0, available: unknown)                                                                                              
+        active profile: &lt;off&gt;                                                                                                                          
+        ports:                                                                                                                                         
+                hdmi-output-0: HDMI / DisplayPort (priority 5900, latency offset 0 usec, available: no)
+                        properties:
+                                device.icon_name = "video-display"
+                hdmi-output-1: HDMI / DisplayPort 2 (priority 5800, latency offset 0 usec, available: no)
+                        properties:
+                                device.icon_name = "video-display"
+                hdmi-output-2: HDMI / DisplayPort 3 (priority 5700, latency offset 0 usec, available: no)
+                        properties:
+                                device.icon_name = "video-display"
+    index: 1
+        name: &lt;alsa_card.pci-0000_00_1b.0&gt;
+        driver: &lt;module-alsa-card.c&gt;
+        owner module: 7
+        properties:
+                alsa.card = "1"
+                alsa.card_name = "HDA Intel PCH"
+                alsa.long_card_name = "HDA Intel PCH at 0xf7210000 irq 49"
+                alsa.driver_name = "snd_hda_intel"
+                device.bus_path = "pci-0000:00:1b.0"
+                sysfs.path = "/devices/pci0000:00/0000:00:1b.0/sound/card1"
+                device.bus = "pci"
+                device.vendor.id = "8086"
+                device.vendor.name = "Intel Corporation"
+                device.product.id = "9ca0"
+                device.product.name = "Wildcat Point-LP High Definition Audio Controller"
+                device.form_factor = "internal"
+                device.string = "1"
+                device.description = "Built-in Audio"
+                module-udev-detect.discovered = "1"
+                device.icon_name = "audio-card-pci"
+        profiles:
+                input:analog-stereo: Analog Stereo Input (priority 60, available: unknown)
+                output:analog-stereo: Analog Stereo Output (priority 6000, available: unknown)
+                output:analog-stereo+input:analog-stereo: Analog Stereo Duplex (priority 6060, available: unknown)
+                off: Off (priority 0, available: unknown)
+        active profile: &lt;output:analog-stereo+input:analog-stereo&gt;
+        sinks:
+                alsa_output.pci-0000_00_1b.0.analog-stereo/#0: Built-in Audio Analog Stereo
+        sources:
+                alsa_output.pci-0000_00_1b.0.analog-stereo.monitor/#0: Monitor of Built-in Audio Analog Stereo
+                alsa_input.pci-0000_00_1b.0.analog-stereo/#1: Built-in Audio Analog Stereo
+        ports:
+                analog-input-internal-mic: Internal Microphone (priority 8900, latency offset 0 usec, available: unknown)
+                        properties:
+                                device.icon_name = "audio-input-microphone"
+                analog-input-headphone-mic: Microphone (priority 8700, latency offset 0 usec, available: no)
+                        properties:
+                                device.icon_name = "audio-input-microphone"
+                analog-input-headset-mic: Headset Microphone (priority 8700, latency offset 0 usec, available: no)
+                        properties:
+                                device.icon_name = "audio-input-microphone"
+                analog-output-speaker: Speakers (priority 10000, latency offset 0 usec, available: unknown)
+                        properties:
+                                device.icon_name = "audio-speakers"
+                analog-output-headphones: Headphones (priority 9000, latency offset 0 usec, available: no)
+                        properties:
+                                device.icon_name = "audio-headphones"</code></pre></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1705436" class="blockpost roweven">
+	<h2><span><span class="conr">#4</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1705436#p1705436">2017-04-20 07:12:55</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>tom.ty89</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2012-11-15</span></dd>
+						<dd><span>Posts: 896</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] HDMI sound card is not detected by pulseaudio?</h3>
+					<div class="postmsg">
+						<p>So pulse is aware of your HDMI sound devices, it just isn't aware of the HDMI connection ("available: no" for all three ports), assuming your TV is connected and turned on when you captured.</p><p>Have you tested if the hardware/driver is really working though?</p><div class="codebox"><pre><code>speaker-test -D hw:HDMI,N -c 2 -r 48000</code></pre></div><p>where N is the index of the device/port, which can be found with aplay -l. Try all three of them.</p><p>(Both aplay and speaker-test are provided in alsa-utils.)</p><p>If any of them works, you can try "forcefully" setting the corresponding card profile for the card.</p><p>For example, if the second index works:</p><div class="codebox"><pre><code>pacmd set-card-profile alsa_card.pci-0000_00_1b.0 output:hdmi-stereo-extra1</code></pre></div><p>A new sink should show up. Set it as the default sink and see. If it does not work, paste</p><div class="codebox"><pre><code>pacmd list-sinks</code></pre></div><p>and</p><div class="codebox"><pre><code>pacmd list-sink-inputs</code></pre></div><p>(while something is playing through pulse)</p>
+						<p class="postedit"><em>Last edited by tom.ty89 (2017-04-20 07:15:46)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1705437" class="blockpost rowodd">
+	<h2><span><span class="conr">#5</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1705437#p1705437">2017-04-20 07:18:46</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>duyinthee</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2015-06-14</span></dd>
+						<dd><span>Posts: 121</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] HDMI sound card is not detected by pulseaudio?</h3>
+					<div class="postmsg">
+						<p>In that output, I notice that the value of <em>active profile:</em> of <em>index: 0</em> which points to <em>"HDA Intel HDMI"</em> is <em> &lt;off&gt; </em> like this:</p><div class="codebox"><pre><code>active profile: &lt;off&gt;                                                                                                                          
+        ports:                                                                                                                                         
+                hdmi-output-0: HDMI / DisplayPort (priority 5900, latency offset 0 usec, available: no)</code></pre></div><p>and <em>active profile:</em> of <em>index: 1</em> which points to <em>"HDA Intel PCH"</em> is <em> &lt;output:analog-stereo+input:analog-stereo&gt; </em> then it shows sinks:</p><div class="codebox"><pre><code>active profile: &lt;output:analog-stereo+input:analog-stereo&gt;
+        sinks:
+                alsa_output.pci-0000_00_1b.0.analog-stereo/#0: Built-in Audio Analog Stereo</code></pre></div><p>so, should we see any clue from them.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1705438" class="blockpost roweven">
+	<h2><span><span class="conr">#6</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1705438#p1705438">2017-04-20 07:23:03</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>tom.ty89</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2012-11-15</span></dd>
+						<dd><span>Posts: 896</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] HDMI sound card is not detected by pulseaudio?</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>duyinthee wrote:</cite><blockquote><div><p>In that output, I notice that the value of <em>active profile:</em> of <em>index: 0</em> which points to <em>"HDA Intel HDMI"</em> is <em> &lt;off&gt; </em> like this:</p><div class="codebox"><pre><code>active profile: &lt;off&gt;                                                                                                                          
+        ports:                                                                                                                                         
+                hdmi-output-0: HDMI / DisplayPort (priority 5900, latency offset 0 usec, available: no)</code></pre></div><p>and <em>active profile:</em> of <em>index: 1</em> which points to <em>"HDA Intel PCH"</em> is <em> &lt;output:analog-stereo+input:analog-stereo&gt; </em> then it shows sinks:</p><div class="codebox"><pre><code>active profile: &lt;output:analog-stereo+input:analog-stereo&gt;
+        sinks:
+                alsa_output.pci-0000_00_1b.0.analog-stereo/#0: Built-in Audio Analog Stereo</code></pre></div><p>so, should we see any clue from them.</p></div></blockquote></div><p>My last post pretty much explained all about it.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1705440" class="blockpost rowodd">
+	<h2><span><span class="conr">#7</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1705440#p1705440">2017-04-20 07:38:44</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>duyinthee</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2015-06-14</span></dd>
+						<dd><span>Posts: 121</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] HDMI sound card is not detected by pulseaudio?</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>tom.ty89 wrote:</cite><blockquote><div><p>So pulse is aware of your HDMI sound devices, it just isn't aware of the HDMI connection ("available: no" for all three ports), assuming your TV is connected and turned on when you captured.</p><p>Have you tested if the hardware/driver is really working though?</p><div class="codebox"><pre><code>speaker-test -D hw:HDMI,N -c 2 -r 48000</code></pre></div><p>where N is the index of the device/port, which can be found with aplay -l. Try all three of them.</p><p>(Both aplay and speaker-test are provided in alsa-utils.)</p><p>If any of them works, you can try "forcefully" setting the corresponding card profile for the card.</p><p>For example, if the second index works:</p><div class="codebox"><pre><code>pacmd set-card-profile alsa_card.pci-0000_00_1b.0 output:hdmi-stereo-extra1</code></pre></div><p>A new sink should show up. Set it as the default sink and see. If it does not work, paste</p><div class="codebox"><pre><code>pacmd list-sinks</code></pre></div><p>and</p><div class="codebox"><pre><code>pacmd list-sink-inputs</code></pre></div><p>(while something is playing through pulse)</p></div></blockquote></div><p>Thank You, tom.ty89.<br>I followed your post and now I solved the problem.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="postlinksb">
+	<div class="inbox crumbsplus">
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages: </span><strong class="item1">1</strong></p>
+		</div>
+		<ul class="crumbs">
+			<li><a href="https://bbs.archlinux.org/index.php">Index</a></li>
+			<li><span>»&nbsp;</span><a href="https://bbs.archlinux.org/viewforum.php?id=23">Newbie Corner</a></li>
+			<li><span>»&nbsp;</span><strong><a href="https://bbs.archlinux.org/viewtopic.php?id=225346">[SOLVED] HDMI sound card is not detected by pulseaudio?</a></strong></li>
+		</ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div id="brdfooternav" class="inbox">
+			<div class="conl">
+				<form id="qjump" method="get" action="https://bbs.archlinux.org/viewforum.php">
+					<div><label><span>Jump to<br></span>
+					<select name="id" onchange="window.location=(&#39;viewforum.php?id=&#39;+this.options[this.selectedIndex].value)">
+						<optgroup label="Technical Issues and Assistance">
+							<option value="23" selected="selected">Newbie Corner</option>
+							<option value="17">Installation</option>
+							<option value="22">Kernel &amp; Hardware</option>
+							<option value="18">Applications &amp; Desktop Environments</option>
+							<option value="31">Laptop Issues</option>
+							<option value="8">Networking, Server, and Protection</option>
+							<option value="32">Multimedia and Games</option>
+							<option value="50">System Administration</option>
+							<option value="35">Other Architectures</option>
+						</optgroup>
+						<optgroup label="Arch-centric">
+							<option value="24">Announcements, Package &amp; Security Advisories</option>
+							<option value="1">Arch Discussion</option>
+							<option value="13">Forum &amp; Wiki discussion</option>
+						</optgroup>
+						<optgroup label="Pacman Upgrades, Packaging &amp; AUR">
+							<option value="44">Pacman &amp; Package Upgrade Issues</option>
+							<option value="49">[testing] Repo Forum</option>
+							<option value="4">Creating &amp; Modifying Packages</option>
+							<option value="38">AUR Issues, Discussion &amp; PKGBUILD Requests</option>
+						</optgroup>
+						<optgroup label="Contributions &amp; Discussion">
+							<option value="20">GNU/Linux Discussion</option>
+							<option value="27">Community Contributions</option>
+							<option value="33">Programming &amp; Scripting</option>
+							<option value="30">Other Languages</option>
+							<option value="47">Artwork and Screenshots</option>
+						</optgroup>
+					</select></label>
+					<input type="submit" value=" Go " accesskey="g">
+					</div>
+				</form>
+			</div>
+			<div class="conr">
+				<p id="feedlinks"><span class="atom"><a href="https://bbs.archlinux.org/extern.php?action=feed&amp;tid=225346&amp;type=atom">Atom topic feed</a></span></p>
+				<p id="poweredby">Powered by <a href="http://fluxbb.org/">FluxBB</a></p>
+			</div>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+<div class="end-box"></div>
+</div>
+
+
+
+</body><div></div></html>
